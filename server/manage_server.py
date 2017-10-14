@@ -3,28 +3,24 @@ import sys
 
 def kill_server(color):
     f = open('colors.txt', 'r')
-    colors = f.readline().split(',')
-    if color in colors:
-        colors.remove(color)
-        f.close()
-        f = open('colors.txt', 'w')
-        writeline = ",".join(colors)
-        print(writeline)
-        f.write(writeline)
-        f.close()
-    else:
-        print("server is not alive!")
+    colors = f.readline().strip().split(',')
+    colors.remove(color)
+    f.close()
+    f = open('colors.txt', 'w')
+    writeline = ",".join(colors).strip()
+    f.write(writeline)
+    f.close()
 
 def add_server(color):
     f = open('colors.txt', 'r')
-    colors = f.readline().split(',')
+    colors = f.readline().strip().split(',')
     f.close()
     if color in colors:
         print("server is already alive!")
     else:
         f = open('colors.txt', 'w')
         colors.append(color)
-        writeline = ",".join(colors)
+        writeline = ",".join(colors).strip()
         f.write(writeline)
         f.close()
 
@@ -37,13 +33,17 @@ def main():
 
     op = args[1]
     num = int(args[2])
-    print(op, num)
 
     colors = ["red", "green", "blue"]
 
+    try:
+        color = colors[num]
+    except:
+        print("server not found!")
+
     if op == "kill":
-        kill_server(colors[num])
+        kill_server(color)
     elif op == "add":
-        add_server(colors[num])
+        add_server(color)
 
 main()
