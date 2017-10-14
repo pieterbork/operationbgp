@@ -2,7 +2,7 @@
 	<head>
 		<title>Fakebook</title>
 	</head>
-	<body>
+    <body style="background-color:{{ color }}">
 		<header>
 			<div class="logo_search">
 				<span class="logo">&nbsp;</span>&nbsp;
@@ -14,23 +14,23 @@
 				</div>
 			</div>
 			<div class="header_user">
-				<img src="doggo2.jpg" class="header_icon">
+                <img src="{{ url_for('static', filename='doggo2.jpg') }}" class="header_icon">
 				<div style="padding-top: 5px;">Operation BGP</div>
 			</div>
 		</header>
 		<div class="container">
 			<div class="maincontent">
 				<div class="prof_pic_update">
-					<img src="doggo2.jpg" width="40px" height="40px" class="pic_icon">
+                    <img src="{{ url_for('static', filename='doggo2.jpg') }}" width="40px" height="40px" class="pic_icon">
 					<div class="update_header">
 						<div class="dots">&#8228;&#8228;&#8228;</div>
 						<a>Operation BGP</a> <font style="color: #9094B4">updated their profile picture.</font> <br>
 						<span class="date">October 12 at 12:01pm</span><br>
 					</div>
-					<img class="prof_pic" src="doggo2.jpg">
+                    <img class="prof_pic" src="{{ url_for('static', filename='doggo2.jpg') }}">
 				</div>
 			</div>
 		</div>
-		<link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
 	</body>
 </html>
