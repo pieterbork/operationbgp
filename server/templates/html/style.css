@@ -1,0 +1,116 @@
+body {
+	margin: 0px;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	background-color: #E9EBEE;
+}
+header {
+	padding: 5px;
+	background-color: #4267B2;
+	height: 32px;
+	color: white;
+	text-align: right;
+}
+a {
+	color: #365899;
+	text-transform: none;
+	font-weight: bold;
+}
+.logo_search {
+	float: left;
+	margin-top: 4px;
+	margin-left: 50px;
+}
+.search {
+	background-color: #F6F7F9;
+	float: right;
+	width: 50px;
+	height: 24px;
+	border-top-right-radius: 2px;
+	border-bottom-right-radius: 2px;
+}
+.mag {
+    background-image: url("nav_sprites.png");
+    background-repeat: no-repeat;
+    background-size: 28px 1054px;
+    background-position: 0 -1021px;
+    float: left;
+    height: 15px;
+    width: 15px;
+    margin-left: 18px;
+    margin-top: 4px;
+}
+.logo {
+    background-image: url("nav_sprites.png");
+    background-repeat: no-repeat;
+    background-size: 28px 1054px;
+    background-position: 0 -118px;
+    float: left;
+    height: 24px;
+    width: 24px;
+}
+.searchbar {
+	background-color: white;
+	display: inline-block;
+	width: 400px;
+	height: 24px;
+	border-radius: 2px;
+}
+.header_user {
+	padding: 3px;
+	width: 135px;
+	float: right;
+	margin-right: 50px; 
+}
+.header_icon {
+	height: 28px;
+	width: 28px;
+	border-radius: 14px;
+	float: left;
+}
+.container {
+	width: 1000px;
+	text-align: center;
+	padding-top: 10px;
+}
+.maincontent {
+	width: 500px;
+	display: inline-block;
+}
+.prof_pic_update {
+	background-color: #FFFFFF;
+	padding: 12px;
+	border: 1px solid lightgray;
+	border-radius: 5px;
+	text-align: left;
+}
+.date {
+	font-size: 12px;
+	color: #9094B4;
+}
+.dots {
+	float: right; 
+	font-size: 20px; 
+	font-weight: bold; 
+	color: grey;
+	letter-spacing: -2px;
+	margin-top: -10px;
+	margin-right: -20px; 
+}
+.prof_pic {
+	width: 100%;
+	border: 1px solid lightgray;
+	margin-top: 15px; 
+}
+.update_header {
+	display: inline-block;
+	padding: 4px;
+	padding-left: 10px;
+	width: 85%;
+}
+.pic_icon {
+	float: left;
+	border-radius: 20px; 
+	border: 1px solid lightgrey;
+}
